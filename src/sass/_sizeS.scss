@@ -1,0 +1,38 @@
+@media (min-width: 576px) {
+  .section {
+    .section-title::before,
+    .section-title::after {
+      width: 35%;
+    }
+  }
+
+  .aboutus {
+    .aboutus-box {
+      .img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          margin: 20px 5px;
+        }
+
+        .aboutus-img-second {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .products {
+    .products-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__element {
+        width: 60%;
+      }
+    }
+  }
+}

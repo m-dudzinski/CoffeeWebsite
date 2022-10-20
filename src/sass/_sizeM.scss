@@ -1,0 +1,72 @@
+@media (min-width: 768px) {
+  .nav {
+    .nav-menu {
+      position: static;
+      flex-direction: row;
+      justify-content: end;
+      gap: 60px;
+    }
+
+    .hamburger {
+      display: none;
+      cursor: pointer;
+    }
+  }
+
+  .header {
+    &__img {
+      background-image: url(/dist/img/header_l.jpg);
+    }
+
+    &__text {
+      left: 10%;
+      transform: translate(-10%, -50%);
+
+      h1 {
+        font-size: 5rem;
+      }
+    }
+  }
+
+  .section {
+    margin: 50px 20px;
+
+    .section-title::before,
+    .section-title::after {
+      width: 40%;
+    }
+  }
+
+  .products {
+    .products-box {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      &__element {
+        width: 32%;
+      }
+    }
+  }
+
+  .contact {
+    text-align: center;
+    .contact-box {
+      &__info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .info-element {
+          margin: 20px;
+        }
+      }
+
+      &__map {
+        iframe {
+          height: 500px;
+        }
+      }
+    }
+  }
+}
